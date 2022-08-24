@@ -1,6 +1,13 @@
 # FlickrViewer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+This is a basic image view and searching using the public Flickr API.
+
+## 3rd Pary libraries
+- Angular Material
+ > For faster FE component reuse
+- ngx-infinite-scroll
+ > To allow handling of infinite scrolling
 
 ## Development server
 
