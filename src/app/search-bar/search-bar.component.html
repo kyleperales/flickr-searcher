@@ -1,0 +1,7 @@
+<mat-form-field [floatLabel]="'never'">
+  <mat-label>Search Flickr</mat-label>
+  <input matInput [formControl]="search" (keydown.enter)="onEnter()">
+  <div matSuffix>
+    <mat-icon>search</mat-icon>
+  </div>
+</mat-form-field>

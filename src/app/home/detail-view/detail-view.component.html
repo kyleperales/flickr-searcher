@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="image-container">
+    <img [src]="data.url + '_w.jpg'">
+    <a class="button" (click)="openFullImage(data.url)" >
+      <mat-icon>fullscreen</mat-icon>
+    </a>
+  </div>
+  <div class="image-details">
+    <h2 *ngIf="data.details.title">{{ data.details.title }}</h2>
+    <span *ngIf="owner">by: {{ owner }}</span>
+    <div *ngIf="data.details.description">
+      {{ data.details.description }}
+    </div>
+  </div>
+</div>

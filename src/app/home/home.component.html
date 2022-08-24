@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-3 p-3 box" *ngFor="let image of (images$ | async); trackBy: identity">
+      <div class="card" [style.background-image]="'url(' + image.url + '_m.jpg)'" (click)="getInfo(image.id)">
+        <div class="card-content">
+          <h2 class="card-title" *ngIf="image.title.length">{{ (image.title.length>20)? (image.title | slice:0:6)+'..':(image.title) }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+  </div>
+</div>
