@@ -5,7 +5,7 @@
 export const environment = {
   production: true,
   flickr: {
-    key: '22637d7d3c5c5b652640862a526cd8b5'
+    key: '<API_KEY>'
   }
 };
 
